@@ -1,0 +1,10 @@
+.acc-container {
+    max-width: 60vw;
+}
+.acc-container, .acc-title, .item-container {
+    margin: 0 auto;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
