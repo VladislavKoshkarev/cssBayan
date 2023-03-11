@@ -4,17 +4,16 @@ body {
 }
 .acc-title {
     width: 15%;
-    margin: 0 auto;
 }
 .acc-container {
     width: 20%;
 }
 .acc-container:hover {
-    color: #780000;
-    transition: all linear .5s;
+    color: #0051ff;
+    transition: all linear .4s;
 }
 .acc-container, .acc-title, .item-container {
-    margin: 0 auto;
+    margin: .5em auto;
 }
 .item-icon {
     width: 50px;
@@ -40,16 +39,24 @@ img {
     transition: all .2s;
 }
 
+.item-container {
+    border-top: 0.1rem solid #4c00a0;
+}
+
 .item-container:hover .item-content{
     max-height: 100vh;
     transition: all linear .6s;
 }
 
-input:checked+.item-content {
+input:checked~.item-content {
     max-height: 100vh;
     transition: all linear .6s;
 }
 
-input:checked+.item-icon{
+.acc-input:checked~.item-icon{
+    transform: rotate(45deg)
+   } 
+
+.item-container:hover .item-icon{
     transform: rotate(45deg)
    }
