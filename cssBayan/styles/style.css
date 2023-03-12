@@ -109,6 +109,9 @@ input:checked~.item-content {
         width: 4rem;
         height: 4rem;
     }
+    .item-content img {
+        width: 70%;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -116,13 +119,16 @@ input:checked~.item-content {
         font-size: 4rem;
     }
     .acc-container {
-        width: 30%;
+        width: 25%;
     }
     .acc-title {
-        width: 30%;
+        width: 25%;
     }
     .item-icon {
         width: 5rem;
         height: 5rem;
+    }
+    .item-content img {
+        width: 50%;
     }
 }
