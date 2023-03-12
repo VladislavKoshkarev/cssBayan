@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(227,227,255,1) 100%);
     color: #4c00a0;
+    font-size: 1.5rem;
 }
 .acc-title {
     width: 15%;
@@ -11,6 +12,7 @@ body {
 .acc-container:hover {
     color: #0051ff;
     transition: all linear .4s;
+    cursor: pointer;
 }
 .acc-container, .acc-title, .item-container {
     margin: .5em auto;
@@ -33,6 +35,15 @@ img {
     height: 150px;
 }
 
+.item-label:hover {
+    cursor: pointer;
+}
+
+.item-label:active {
+    filter:invert(100%);
+    transition: all .1s;
+}
+
 .item-content {
     max-height: 0;
     overflow: hidden;
@@ -46,6 +57,7 @@ img {
 .item-container:hover .item-content{
     max-height: 100vh;
     transition: all linear .6s;
+    /* cursor: pointer; */
 }
 
 input:checked~.item-content {
@@ -58,5 +70,6 @@ input:checked~.item-content {
    } 
 
 .item-container:hover .item-icon{
-    transform: rotate(45deg)
+    transform: rotate(45deg);
+    /* cursor: pointer; */
    }
